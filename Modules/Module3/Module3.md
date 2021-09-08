@@ -105,7 +105,7 @@ Define the boolean operators: >, <, ==, >=, <=
 
 How do you address an index in an list? Write a python code that assigns 34 to a new variable by accessing the value stored in:  
         arr = [4, 3, -1, 4, 34]
-
+        
  - Answer: x = arr[4]
 What is the first index of a list? Why?
 

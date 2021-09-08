@@ -135,14 +135,19 @@ Evaluate the following code. Is the code written correctly? What would be the co
         print('This message has a syntax error!")
         print(Churrigueresco)
 
- - Answer:
+ - Answer: The code is incorrect because it should be 
+        print("This message has a syntax error!")
+        print(Churrigueresco) this line is correct but only if there is a variable called Churrisgueresco
 
 Evaluate the following code. Is the code written correctly? What would be the correct code?
         someNumber=360
         print(' The Number is someNumber ')
 Expected:  The Number is 360
 
- - Answer:
+ - Answer:It is not because this code would print "The number is someNumber" the actual code is 
+        someNumber=360
+        print(' The Number is', someNumber)
+Expected:  The Number is 360
 
 Define a function that takes 2 or more string parameters and prints a single line using them as part of a functional string. The function may do anything you chose but the function name and parameter names must be representative of what they are.
 
