@@ -12,9 +12,8 @@ for s in range(0,n-1):
         x = int(input())
         arr.append(x)
 print(arr)
-arrs = [4, 3, -1, 4, 34]
 
 
-    
+
     
 

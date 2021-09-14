@@ -137,21 +137,28 @@ Evaluate the following code. Is the code written correctly? What would be the co
 
  - Answer: The code is incorrect because it should be 
         print("This message has a syntax error!")
-        print(Churrigueresco) this line is correct but only if there is a variable called Churrisgueresco
+        print("Churrigueresco") this line was correct but only if there is a variable called Churrisgueresco if theres not it needs quotations
 
 Evaluate the following code. Is the code written correctly? What would be the correct code?
+        
         someNumber=360
         print(' The Number is someNumber ')
 Expected:  The Number is 360
 
  - Answer:It is not because this code would print "The number is someNumber" the actual code is 
         someNumber=360
-        print(' The Number is', someNumber)
+        print('The Number is',someNumber)
 Expected:  The Number is 360
 
 Define a function that takes 2 or more string parameters and prints a single line using them as part of a functional string. The function may do anything you chose but the function name and parameter names must be representative of what they are.
 
- - Answer:
+ - Answer: 
+ import random
+def my_string(name,student_num,age):
+    f = random.randint(22,28)
+    print("Hello"+ name+ "! Your student number is "+str(f)+"-"+str(student_num)+" and you are "+str(age)+" years old.")
+n = random.randint(1,100)
+my_string(input("Please put in your name. "),n,input("How old are you? "))
   
 
 
@@ -165,6 +172,8 @@ Which code returns the length of the string s0:
 s0 = "What is my length? Store it as a number in a variable."
 
  - Answer:
+ x= len(s0)
+ print("the lenght of your string is "+str(x)+".")
 
 How do you create a substring in python?
 Create a substring of s1 containing only my name. Store it in a variable called ss1.
@@ -173,10 +182,15 @@ https://www.freecodecamp.org/news/how-to-substring-a-string-in-python/
 s1 = "Hello Student! My name is Carlos Jose Cobián. I enjoy coding and video games!"
 
  - Answer: ss1 =
+s1 = "Hello Student! My name is Carlos Jose Cobián. I enjoy coding and video games!"
+ss1=s1[26: 44]
+print("Your name is",ss1)
 
 Capitalize every letter of ss1 using a function. Store it in a variable called SS1.
 
  - Answer: SS1 =
+ s1 = "Hello Student! My name is Carlos Jose Cobián. I enjoy coding and video games!"
+ss1= s1.upper()
 
 
 This last section is not worth any points, but is worth looking into. It is good string manipulation practice and contains exercises that you may see in a pop quiz! 
