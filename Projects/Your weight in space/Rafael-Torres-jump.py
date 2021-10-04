@@ -27,7 +27,7 @@ unit=input("Will you use meters or inches? ")
 if unit =="inches":
     jump_d= input("Enter the jump length in inches ")
     jump(float(jump_d),gravity,planet,unit)
-if unit == "meters":
+elif unit == "meters":
     jump_d= input("Enter the jump length in meters ")
     jump(float(jump_d),gravity,planet,unit)
 else:
