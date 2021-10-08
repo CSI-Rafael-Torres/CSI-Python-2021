@@ -81,9 +81,27 @@ print(f"Computer selected: {computerChoice}")
 Give a python example for each logic operator in the module image.
 
  - Answers:
-   - OR:
+   - OR: 
+var_lol=input("input a number between 1 and 5 ")
+var_lol2=input("input another number between 1 and 5 ")
+if int(var_lol) == 3 or int(var_lol2) ==5 :
+    print("you won the medium prize")
+else:
+    print("smoked")
    - AND: 
+var_lol=input("input a number between 1 and 5 ")
+var_lol2=input("input another number between 1 and 5 ")
+if int(var_lol) == 3 and int(var_lol2) ==5 :
+    print("you won the jackpot")
+else:
+    print("smoked")
    - NOT: 
+var_lol=input("input a number between 1 and 5 ")
+var_lol2=input("input another number between 1 and 5 ")
+if not int(var_lol) == 3 or int(var_lol2) == 5 :
+    print("smoked")
+else:
+    print("You win")
 
 
 Type down any class notes below this sentence:
