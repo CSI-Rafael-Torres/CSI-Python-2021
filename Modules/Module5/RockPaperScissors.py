@@ -1,8 +1,7 @@
 import random
 x=0
-for x in range(0,2) :
-    x=0
-    print("This program lets you play rock paper scissors." )
+print("This program lets you play rock paper scissors." )
+while x<1 :
     p_rps= input("Please choose between rock paper scissors. ")
     bn_rps = random.randint(1,3)
     if bn_rps == 1:
@@ -27,13 +26,12 @@ for x in range(0,2) :
             print("you lost")
         elif p_rps == "scissors" and b_rps == "paper" :
             print("you win")
-    for l in range(0,1) :
-        rr = input("Would you like to play again y/n? ")
-        l=0
-        if rr=="y":
-            l+=1
-        elif rr=="n":
-            x +=1
-            l+=1
-        else :
-            print("Please put a valid statement")
+    rr = input("Would you like to play again y/n? ")
+        
+    if rr=="y":
+        x=0
+    elif rr=="n":
+        x +=1
+    else :
+        print("Please put a valid statement")
+        x+=1
