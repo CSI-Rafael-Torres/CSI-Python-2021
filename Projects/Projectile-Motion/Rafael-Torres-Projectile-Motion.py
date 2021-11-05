@@ -1,16 +1,17 @@
 import math
-# time =0
-# gravity =9.81
-# Gun = "APB"
-# AW=0.011#kg
-# PS=302#m/s
-# Caliber= "9x18mm Makarov"
-# Ammo= "9x18mm PM P gzh"
-# Building= "Ocean Tower"
-# Height =242.92#ft
-# d= PS*time
-def GProjectile(Gun:str, Caliber:str, Ammo:str,Building:str,Height:int,Speed:int,Gravity:int):
-    Time = math.sqrt((2*Height)/Gravity)
-    distance=(Speed*Time)
-    print("An",Gun,"with",Ammo,"ammo and",Caliber,"caliber was fired out of",Building,"with a velocity of",Speed,"This program with find its time and distance")
-GProjectile("APB","9x18mm Makarov","9x18mm PM P gzh","Ocean Tower",242.92,302,9.81)
+import experimentaldata
+# experimentadata= {
+#     "gun":"APB",
+#     "caliber":"9x18mm Makarov",
+#     "ammo":"9x18mm PM P gzh",
+#     "building":"Ocean Tower",
+#     "height" : 242.92,
+#     "speed": 302,
+#     "gravity":9.81
+# }
+def GProjectile(ExperimentalData:experimentaldata):
+    Time = math.sqrt((2*ExperimentalData.height)/ExperimentalData.gravity)
+    distance=(ExperimentalData.speed*Time)
+    print("An",ExperimentalData.gun,"with",ExperimentalData.ammo,"ammo and",ExperimentalData.caliber,"caliber was fired out of",ExperimentalData.building,"with a velocity of",ExperimentalData.speed,"This program with find its time and distance")
+# GProjectile("APB","9x18mm Makarov","9x18mm PM P gzh","Ocean Tower",242.92,302,9.81)
+ExperimentalData= experimentaldata("APB","9x18mm Makarov","9x18mm PM P gzh","Ocean Tower",242.92,302,9.81)
