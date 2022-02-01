@@ -16,7 +16,7 @@ def play(word):
     print(word_completion)
     print("\n")
     while not guessed and tries>0:
-        guess = input("Guess a letter or word").upper()
+        guess = input("Guess a letter or word ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print("You already tried",guess,"!")
@@ -49,16 +49,10 @@ def play(word):
         print(display_hangman(tries))
         print(word_completion)
         print("\n")
-        if guessed:
-            print("Good job, you guessed the word !! :)")
-        else:
-            print("I'm sorry, you ran out of tries. The word was"+word+". Try again!")
-
-
-
-
-
-
+    if guessed:
+        print("Good job, you guessed the word !! :)")
+    else:
+        print("I'm sorry, you ran out of tries. The word was "+word+". Try again!")
 
 def display_hangman(tries):
     stages = [ """
@@ -124,4 +118,13 @@ def display_hangman(tries):
         |
         -
         """,
-        ]
+    ]
+    return stages[tries]
+def main():
+    word = get_word(word_list)
+    play(word)
+    while input("Again? (Y/N) ").upper() == "Y":
+        word = get_word(word_list)
+        play(word)
+if __name__ == "__main__":
+    main()
