@@ -34,6 +34,7 @@ def our_snake(snake_block, snake_list):
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
+    dis.blit(mesg, [dis_width/3.5, dis_height/2])
 
 def gameRestart():
     game_over = False
